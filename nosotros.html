@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/Favi.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Nosostros</title>
+    <style>
+        #cuer {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #contnedor {
+            display: grid;
+            grid-template-areas:
+                "header header header header"
+                "texto texto imagen1 imagen1"
+                "imagen2 imagen2 imagen2 imagen2"
+                "footer footer footer footer";
+            grid-template-rows: auto 1fr auto auto;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 10px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #cabeza {
+            grid-area: header;
+            background-color: #af9b44;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .texto {
+            grid-area: texto;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .imagen1 {
+            grid-area: imagen1;
+            background-color: #e9ecef;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd;
+        }
+        .imagen2 {
+            grid-area: imagen2;
+            background-color: #e9ecef;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd;
+        }
+        #foot{
+            grid-area: footer;
+            background-color: #af9b44;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body id="cuer">
+    <section id="cabecera_dos">
+        <div id="titulo_dos">
+        <h1>Corriendo el mundo</h1></div>
+        <nav id="menu_dos">
+            <ul>
+                <li><i class="fa-solid fa-heart"></i><a href="index.html">INICIO</a></li>
+                <li><i class="fa-solid fa-pen"></i><a href="#blog">BLOG</a></li>
+                <li><i class="fa-regular fa-image"></i><a href="galeria.html">MODELOS</a></li>
+                <li><i class="fa-solid fa-video"></i><a href="videos.html">VIDEOS</a></li>
+                <li><i class="fa-solid fa-address-card"></i><a href="contactos.html">CONTACTOS</a></li>
+                <li><i class="fa-solid fa-user"></i></i><a href="nosotros.html">NOSOTROS</a></li>
+
+
+
+
+            </ul>
+        </nav>
+    <div id="contnedor">
+        <header id="cabeza"><h1>Nosotros</h1></header>
+        <div class="texto">
+            <h2>¿Quienes somos?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ullam rerum, explicabo expedita pariatur quam iure reprehenderit aut...</p>
+            <p>Suas quem nosec quiequam odot magni ea, quae segi voluptas aspernatur ab maiores excepturi...</p>
+        </div>
+        <div class="imagen1"><img src="IMG/a5.jpeg" alt=""></div>
+        <div class="imagen2"><img src="IMG/a6.webp" alt=""></div>
+        <footer id="foot">Copyright 2024 - Todos los Derechos Reservados</footer>
+        <footer>
+            <address>
+            <a href="https://www.instagram.com/adidas"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://web.facebook.com/adidasPE/?brand_redir=182162001806727"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/adidas_ES"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.youtube.com/user/adidas"><i class="fa-brands fa-youtube"></i></a>
+        </address>
+        </footer>
+    </div>
+</body>
+</html>
